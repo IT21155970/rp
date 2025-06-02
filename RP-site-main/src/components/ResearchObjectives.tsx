@@ -17,7 +17,7 @@ function ResearchObjectives() {
             <h3 className="text-xl md:text-2xl font-semibold mb-2 text-green-700">
               Demand Forecasting for the Tea Industry
             </h3>
-            <p className="text-sm md:text-base text-gray-700">
+            <p className="text-sm md:text-base text-black">
               Analyze historical demand data, integrate weather and market trends, and develop an LSTM-based forecasting model for accurate tea demand prediction. Deploy this model through a user-friendly web application and validate its effectiveness in real-world settings.
             </p>
           </div>

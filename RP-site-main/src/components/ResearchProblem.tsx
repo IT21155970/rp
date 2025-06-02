@@ -8,57 +8,57 @@ function ResearchProblem() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-green-800">
+        {/* ✅ Heading in Green */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-800">
           Research Problem & Solution
         </h2>
 
-        <div className="text-left space-y-4 md:space-y-6">
-          <div className="bg-green-50 p-3 md:p-5 rounded-lg shadow-sm mb-4 md:mb-6">
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-3 text-green-700">
+        <div className="text-left space-y-6 text-black leading-relaxed text-base">
+          {/* ✅ Problem Section */}
+          <section className="bg-green-50 p-5 rounded-lg shadow-sm">
+            <h3 className="text-xl md:text-2xl font-semibold mb-3 text-green-700">
               Proposed Problem
             </h3>
-            <p className="text-sm md:text-base text-gray-700 mb-2 md:mb-3">
+            <p>
               The Sri Lankan tea industry suffers from various supply chain inefficiencies including inaccurate demand forecasting, labor unpredictability, poor inventory management, and inefficient logistics. Traditional methods often lack the ability to integrate dynamic external factors such as weather patterns, labor availability, and traffic conditions, leading to suboptimal production planning and delivery.
             </p>
-            <p className="text-sm md:text-base text-gray-700">
+            <p>
               Despite being a key contributor to the national economy, the industry relies heavily on outdated practices. There is a critical need for an intelligent, real-time system that can provide predictive insights to optimize operations across the tea supply chain — from plucking and production to delivery and inventory control.
             </p>
-          </div>
+          </section>
 
-          <div className="bg-green-50 p-3 md:p-5 rounded-lg shadow-sm mb-4 md:mb-6">
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-3 text-green-700">
+          {/* ✅ Solution Section */}
+          <section className="bg-green-50 p-5 rounded-lg shadow-sm">
+            <h3 className="text-xl md:text-2xl font-semibold mb-3 text-green-700">
               Proposed Solution
             </h3>
-            <p className="text-sm md:text-base text-gray-700 mb-2 md:mb-3">
+            <p>
               This research proposes an AI-powered forecasting and decision-support platform specifically designed for the tea supply chain in Sri Lanka. The system integrates real-time data with advanced machine learning models—namely LSTM and CNN architectures—to forecast demand, labor, inventory needs, and traffic flow.
             </p>
-            <p className="text-sm md:text-base text-gray-700 mb-2 md:mb-3">
+            <p>
               By combining internal historical data with external variables (weather, labor attendance, traffic, etc.), the platform will help managers make data-driven decisions that minimize delays, reduce wastage, and improve cost-efficiency.
             </p>
 
-            <ul className="list-disc pl-4 md:pl-6 space-y-1 md:space-y-2">
-              <li className="text-sm md:text-base text-gray-700">
-                <span className="font-medium">Demand Forecasting: </span>
-                LSTM models will analyze sales history, weather data, and seasonal factors to accurately predict short- and long-term tea demand.
+            {/* ✅ Forecasting List */}
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Demand Forecasting:</strong> LSTM models will analyze sales history, weather data, and seasonal factors to accurately predict short- and long-term tea demand.
               </li>
-              <li className="text-sm md:text-base text-gray-700">
-                <span className="font-medium">Labor Prediction: </span>
-                Historical labor attendance and weather patterns will be used to anticipate workforce availability using sequence-based LSTM models.
+              <li>
+                <strong>Labor Prediction:</strong> Historical labor attendance and weather patterns will be used to anticipate workforce availability using sequence-based LSTM models.
               </li>
-              <li className="text-sm md:text-base text-gray-700">
-                <span className="font-medium">Inventory Management: </span>
-                AI-based simulations will automate procurement and storage monitoring using reinforcement learning and predictive analytics.
+              <li>
+                <strong>Inventory Management:</strong> AI-based simulations will automate procurement and storage monitoring using reinforcement learning and predictive analytics.
               </li>
-              <li className="text-sm md:text-base text-gray-700">
-                <span className="font-medium">Traffic Optimization: </span>
-                CNNs and LSTMs trained on GPS and road condition data will forecast delivery delays and suggest optimal routing for distribution trucks.
+              <li>
+                <strong>Traffic Optimization:</strong> CNNs and LSTMs trained on GPS and road condition data will forecast delivery delays and suggest optimal routing for distribution trucks.
               </li>
             </ul>
 
-            <p className="text-sm md:text-base text-gray-700 mt-2 md:mt-4">
+            <p className="mt-4">
               The platform will feature a dashboard where managers can visualize forecasts and alerts in real-time. Technologies such as MongoDB or Firebase will be used for data handling, while TensorFlow or PyTorch will support model training and inference. The system will be scalable, cost-effective, and built with usability in mind for factory-level adoption.
             </p>
-          </div>
+          </section>
         </div>
       </motion.div>
     </div>

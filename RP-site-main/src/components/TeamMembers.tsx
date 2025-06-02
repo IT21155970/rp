@@ -15,12 +15,43 @@ const researchTeam = [
 
 const TeamMembers = () => {
   return (
-    <div className="py-10 px-5 bg-gray-50">
+    <div className="py-8 px-10 bg-gray-50">
       <h2 className="text-center text-3xl font-bold mb-12 text-green-800">
         Meet Our Team
       </h2>
 
-      {/* Project Supervisors */}
+ 
+
+      {/* Research Team */}
+      <h3 className="text-center text-xl font-semibold mb-8 text-green-800">
+        Research Team
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+        {researchTeam.map(({ name, image }, index) => (
+          <motion.div
+            key={index}
+            className="w-64 bg-white p-4 rounded-xl shadow-md flex flex-col items-center"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{ scale: 1.03 }}
+          >
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-green-200 shadow-lg mb-4">
+              <img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h1 className="text-lg font-semibold text-center text-gray-800 leading-tight">
+              {name}
+            </h1>
+          </motion.div>
+        ))}
+      </div>
+
+     {/* Project Supervisors */}
+     <br></br>
       <h3 className="text-center text-xl font-semibold mb-8 text-green-800">
         Project Supervisors
       </h3>
@@ -52,33 +83,7 @@ const TeamMembers = () => {
         ))}
       </div>
 
-      {/* Research Team */}
-      <h3 className="text-center text-xl font-semibold mb-8 text-green-800">
-        Research Team
-      </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
-        {researchTeam.map(({ name, image }, index) => (
-          <motion.div
-            key={index}
-            className="w-64 bg-white p-4 rounded-xl shadow-md flex flex-col items-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            whileHover={{ scale: 1.03 }}
-          >
-            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-green-200 shadow-lg mb-4">
-              <img
-                src={image}
-                alt={name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="text-lg font-semibold text-center text-gray-800 leading-tight">
-              {name}
-            </h1>
-          </motion.div>
-        ))}
-      </div>
+
     </div>
   );
 };

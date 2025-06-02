@@ -3,15 +3,13 @@ import flask from "../assets/98-985032_flask-logo-flask-python-icon.png";
 import python from "../assets/python.png";
 import react from "../assets/OIP (10).jpeg";
 import mongodb from "../assets/OIP (11).jpeg";
-import firebase from "../assets/firebase.webp";
 import nodeicon from "../assets/nodejs.jpeg";
 
-
+// Removed Firebase from this list
 const techs = [
   { src: python, alt: "Python" },
   { src: react, alt: "React" },
   { src: mongodb, alt: "MongoDB" },
-  { src: firebase, alt: "Firebase" },
   { src: nodeicon, alt: "Node.js" },
   { src: flask, alt: "Flask" },
 ];
@@ -44,4 +42,3 @@ export default function TechStack() {
     </div>
   );
 }
-

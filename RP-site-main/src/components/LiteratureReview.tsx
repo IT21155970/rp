@@ -1,4 +1,3 @@
-// filepath: c:\Users\lahir\Desktop\New folder (16)\RP-site\src\components\LiteratureReview.tsx
 import { motion } from "framer-motion";
 
 function LiteratureReview() {
@@ -9,11 +8,13 @@ function LiteratureReview() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-800">
+        {/* ✅ Title in Green */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-700">
           Literature Review
         </h2>
 
-        <div className="text-left space-y-5 md:space-y-7 text-gray-700 leading-relaxed text-base md:text-lg">
+        {/* ✅ Paragraphs in Black */}
+        <div className="text-left space-y-5 md:space-y-7 text-black leading-relaxed text-base md:text-lg">
           <p>
             The tea industry’s supply chain has been extensively studied, highlighting the need for greater efficiency, sustainability, and resilience to meet global demands. Climate variability, such as unpredictable rainfall and droughts, significantly impacts crop yields and disrupts supply chains, posing a serious challenge for tea producers.
           </p>
